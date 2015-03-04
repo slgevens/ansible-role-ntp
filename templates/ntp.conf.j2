@@ -1,0 +1,30 @@
+# {{ ansible_managed }}
+# /etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
+
+driftfile {{ ntp_driftfile }}
+
+{% if ntp_stats_enabled %}
+statsdir {{ ntp_statsdir }}
+{% endif %}
+
+statistics loopstats peerstats clockstats
+filegen loopstats file loopstats type day enable
+filegen peerstats file peerstats type day enable
+filegen clockstats file clockstats type day enable
+
+{% for value in ntp_servers %}
+server {{ value }}
+{% endfor %}
+
+{% for value in ntp_restrict %}
+restrict {{ value }}
+{% endfor %}
+
+{% if ntp_broadcast_enabled %}
+broadcast {{ ntp_broadcast_address }}
+{% endif %}
+
+{% if ntp_broadcast_client_enabled %}
+disable auth
+broadcastclient
+{% endif %}

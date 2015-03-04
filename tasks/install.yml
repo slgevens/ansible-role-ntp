@@ -1,0 +1,6 @@
+---
+- name: Ensure NTP is installed
+  apt:
+    name: ntp
+    update_cache: yes
+    state: present

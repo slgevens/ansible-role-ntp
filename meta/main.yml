@@ -1,0 +1,17 @@
+---
+dependencies: []
+
+galaxy_info:
+  description: "NTP installation and configuration"
+  author: "Franck Nijhof"
+  company: "GeekChimp"
+  license: MIT
+  min_ansible_version: 1.8
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+        - all
+  categories:
+    - system
