@@ -4,6 +4,7 @@
     src: ntp.conf.j2
     dest: "/etc/ntp.conf"
     mode: 0644
+  tags: [geekchimp,ntp,configuration]
 
 - name: Ensure DHCP created NTP configuration is non-existing
   notify: Restart NTP
@@ -11,6 +12,7 @@
     path: "/var/lib/ntp/ntp.conf.dhcp"
     state: absent
   when: ntp_remove_dhcp_configuration
+  tags: [geekchimp,ntp,configuration]
 
 - name: Ensure NTP is running and enabled at system start
   service:
@@ -18,6 +20,7 @@
     state: started
     enabled: yes
   when: ntp_enabled
+  tags: [geekchimp,ntp,configuration]
 
 - name: Ensure NTP is stopped and disabled at system start
   service:
@@ -25,3 +28,4 @@
     state: stopped
     enabled: no
   when: not ntp_enabled
+  tags: [geekchimp,ntp,configuration]

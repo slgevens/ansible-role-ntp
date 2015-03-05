@@ -4,3 +4,4 @@
     name: ntp
     update_cache: yes
     state: present
+  tags: [geekchimp,ntp,installation]
