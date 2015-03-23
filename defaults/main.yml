@@ -1,15 +1,15 @@
 ---
 # Ensure the NTP daemon is running and the service is enabled.
-ntp_enabled: yes
+ntp_enabled: true
 
 # Ensure the NTP configuration created by the DHCP client is removed.
-ntp_remove_dhcp_configuration: yes
+ntp_remove_dhcp_configuration: true
 
 # Location of the NTP drift file.
 ntp_driftfile: "/var/lib/ntp/ntp.drift"
 
 # Enable this if you want statistics to be logged.
-ntp_stats_enabled: no
+ntp_stats_enabled: false
 
 # Location of where the statistics should be logged.
 ntp_statsdir: "/var/log/ntpstats/"
@@ -43,4 +43,4 @@ ntp_broadcast_address: 192.168.123.255
 
 # If you want to listen to time broadcasts on your local subnet?
 # Please do this only if you trust everybody on the network!
-ntp_broadcast_client_enabled: no
+ntp_broadcast_client_enabled: false

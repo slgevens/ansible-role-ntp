@@ -4,4 +4,9 @@
     name: ntp
     update_cache: yes
     state: present
-  tags: [geekchimp,ntp,installation]
+  when: ansible_os_family == "Debian"
+  tags:
+    - geekchimp
+    - debian
+    - ntp
+    - installation

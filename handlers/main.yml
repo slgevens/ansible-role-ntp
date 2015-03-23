@@ -3,4 +3,4 @@
   service:
     name: ntp
     state: restarted
-  when: ntp_enabled
+  when: ansible_os_family == "Debian" and ntp_enabled
