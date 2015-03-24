@@ -113,6 +113,10 @@ $ git clone https://github.com/GeekChimp/ansible-omnibus.git
 
 ```
 
+## Design philosophy & code styling
+
+Read more about this here: https://github.com/GeekChimp/ansible-omnibus#design-filosofy--code-styling
+
 ## Contributing
 
 Ansible Omnibus is an open source project. Feel free to submit a pull request.
