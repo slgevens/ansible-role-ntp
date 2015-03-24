@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/geekchimp/ansible-role-ntp/blob/master/README.md#license) [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=13000391)](https://www.bountysource.com/trackers/13000391-geekchimp-ansible-omnibus?utm_source=13000391&utm_medium=shield&utm_campaign=TRACKER_BADGE)
 
 [![Gratipay](https://img.shields.io/gratipay/Frenck.svg)](https://gratipay.com/Frenck) [![PayPal](https://img.shields.io/badge/paypal-donate-red.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UZDP6DYW6W9BU)
-[![Facebook](https://img.shields.io/badge/facebook-follow-blue.svg)](https://www.facebook.com/geekchimp) [![Twitter](https://img.shields.io/badge/twitter-follow-blue.svg)](https://twitter.com/gchimp)  
+[![Facebook](https://img.shields.io/badge/facebook-follow-blue.svg)](https://www.facebook.com/geekchimp) [![Twitter](https://img.shields.io/badge/twitter-follow-blue.svg)](https://twitter.com/gchimp) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/GeekChimp/ansible-omnibus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Ansible NTP Role
 

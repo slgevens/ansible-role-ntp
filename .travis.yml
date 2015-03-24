@@ -24,3 +24,11 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/92047b32b13603807c99
+    on_success: change
+    on_failure: always
+    on_start: false
