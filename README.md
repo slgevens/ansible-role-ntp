@@ -115,7 +115,7 @@ $ git clone https://github.com/GeekChimp/ansible-omnibus.git
 
 ## Design philosophy & code styling
 
-Read more about this here: https://github.com/GeekChimp/ansible-omnibus#design-filosofy--code-styling
+Read more about this here: https://github.com/GeekChimp/ansible-omnibus#design-philosophy--code-styling
 
 ## Contributing
 
