@@ -28,7 +28,7 @@
     name: ntp
     state: started
     enabled: yes
-  when: ansible_os_family == "Debian and ntp_enabled
+  when: ansible_os_family == "Debian" and ntp_enabled
   tags:
     - geekchimp
     - debian
@@ -40,7 +40,7 @@
     name: ntp
     state: stopped
     enabled: no
-  when: ansible_os_family == "Debian and not ntp_enabled
+  when: ansible_os_family == "Debian" and not ntp_enabled
   tags:
     - geekchimp
     - debian
