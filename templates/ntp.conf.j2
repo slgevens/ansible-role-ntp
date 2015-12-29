@@ -20,6 +20,10 @@ server {{ value }}
 restrict {{ value }}
 {% endfor %}
 
+logfile /var/log/ntp.log
+
+fudge   127.127.1.0 stratum 10
+
 {% if ntp_broadcast_enabled %}
 broadcast {{ ntp_broadcast_address }}
 {% endif %}

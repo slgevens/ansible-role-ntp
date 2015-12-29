@@ -8,6 +8,12 @@
 
 Installs and configures the NTP daemon
 
+## ADDS
+
+### (29/12/15)
+- logfile
+- fudge 
+
 ## Supported Platforms
 
 Debian (and Debian based e.g. Ubuntu)
