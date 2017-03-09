@@ -12,8 +12,7 @@ filegen loopstats file loopstats type day enable
 filegen peerstats file peerstats type day enable
 filegen clockstats file clockstats type day enable
 
-{% for value in ntp_servers %}
-server {{ value }}
+{% for value in ntp_servers %}server {{ value }}
 {% endfor %}
 
 {% for value in ntp_restrict %}
